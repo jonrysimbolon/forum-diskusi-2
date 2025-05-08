@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "format": "prettier . --write",
     "test": "vitest",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "ci:test": "vitest --no-watch && start-server-and-test dev http://localhost:5173/ e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
@@ -44,6 +45,7 @@
     "globals": "^15.15.0",
     "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
+    "start-server-and-test": "^2.0.11",
     "vite": "^6.2.0",
     "vitest": "^3.1.3"
   }
