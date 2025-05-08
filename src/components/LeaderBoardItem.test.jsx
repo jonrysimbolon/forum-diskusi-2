@@ -1,5 +1,7 @@
 import React from 'react';
-import { describe, it, expect, afterEach } from 'vitest';
+import {
+  describe, it, expect, afterEach,
+} from 'vitest';
 import { cleanup, render, screen } from '@testing-library/react';
 import matchers from '@testing-library/jest-dom/matchers';
 import LeaderBoardItem from './LeaderBoardItem';

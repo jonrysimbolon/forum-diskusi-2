@@ -37,7 +37,7 @@ describe('VoteItem', () => {
   });
 
   it('should add "voted" class when isVoted is true', () => {
-    render(<VoteItem type="upVote" count={10} event={vi.fn()} isVoted={true} icon={<span>↑</span>} />);
+    render(<VoteItem type="upVote" count={10} event={vi.fn()} isVoted icon={<span>↑</span>} />);
 
     expect(screen.getByRole('button', { name: 'Vote up' })).toHaveClass('voted');
   });

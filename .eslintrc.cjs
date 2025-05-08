@@ -1,9 +1,15 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:react-hooks/recommended', 'plugin:js/recommended', 'plugin:react/recommended', 'plugin:react/configs/flat/recommended', 'plugin:cypress/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'airbnb',
+    'plugin:react-hooks/recommended',
+    'plugin:react/recommended',
+    'plugin:cypress/recommended',
+    'plugin:storybook/recommended',
+  ],
   env: {
     browser: true,
     es2021: true,
-    'cypress/globals': true, // Menambahkan environment Cypress
+    'cypress/globals': true,
   },
   parserOptions: {
     ecmaVersion: 'latest',
@@ -11,9 +17,8 @@ module.exports = {
   },
   plugins: [
     'react-refresh',
-    'js', // menambahkan plugin js jika belum ada
-    'react', // menambahkan plugin react jika belum ada
-    'cypress', // menambahkan plugin cypress
+    'react',
+    'cypress',
   ],
   rules: {
     'react/jsx-no-target-blank': 'off',

@@ -20,15 +20,17 @@ export default {
   },
 };
 
-// Template dengan logika dinamis untuk icon
-const Template = (args) => {
-  const icon =
-    args.type === 'upVote'
-      ? args.isVoted ? <FaThumbsUp /> : <FaRegThumbsUp />
-      : args.isVoted ? <FaThumbsDown /> : <FaRegThumbsDown />;
+function Template({ type, isVoted, ...rest }) {
+  let icon;
 
-  return <VoteItem {...args} icon={icon} />;
-};
+  if (type === 'upVote') {
+    icon = isVoted ? <FaThumbsUp /> : <FaRegThumbsUp />;
+  } else {
+    icon = isVoted ? <FaThumbsDown /> : <FaRegThumbsDown />;
+  }
+
+  return <VoteItem type={type} isVoted={isVoted} icon={icon} {...rest} />;
+}
 
 export const UpVote = Template.bind({});
 UpVote.args = {

@@ -6,7 +6,9 @@ export default {
   component: ThreadItem,
 };
 
-const Template = (args) => <ThreadItem {...args} />;
+function Template(args) {
+  return <ThreadItem {...args} />;
+}
 
 export const Default = Template.bind({});
 Default.args = {
@@ -24,8 +26,6 @@ Default.args = {
   downVotesBy: [],
   totalComments: 5,
   authUser: 'user-2',
-  upVote: (id, isVoted) =>
-    alert(`UpVote on ${id}. Already voted? ${isVoted}`),
-  downVote: (id, isVoted) =>
-    alert(`DownVote on ${id}. Already voted? ${isVoted}`),
+  upVote: (id, isVoted) => alert(`UpVote on ${id}. Already voted? ${isVoted}`),
+  downVote: (id, isVoted) => alert(`DownVote on ${id}. Already voted? ${isVoted}`),
 };

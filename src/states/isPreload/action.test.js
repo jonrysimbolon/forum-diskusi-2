@@ -5,7 +5,6 @@ import * as action from './action';
 import api from '../../utils/api';
 import { setAuthUserActionCreator } from '../authUser/action';
 
-// Scenario test
 /**
  * asyncPreloadProcess thunk
  * - should dispatch setAuthUserActionCreator and setIsPreloadActionCreator correctly when data fetching success
