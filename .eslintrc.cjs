@@ -1,12 +1,5 @@
 module.exports = {
-  extends: [
-    'airbnb',
-    'plugin:react-hooks/recommended',
-    'plugin:js/recommended', // menambahkan ini
-    'plugin:react/recommended', // ini diubah menjadi rekomendasi dari plugin React
-    'plugin:react/configs/flat/recommended', // menambahkan ini
-    'plugin:cypress/recommended', // menambahkan ini
-  ],
+  extends: ['airbnb', 'plugin:react-hooks/recommended', 'plugin:js/recommended', 'plugin:react/recommended', 'plugin:react/configs/flat/recommended', 'plugin:cypress/recommended', 'plugin:storybook/recommended'],
   env: {
     browser: true,
     es2021: true,
