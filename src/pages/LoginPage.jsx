@@ -26,7 +26,7 @@ function LoginPage() {
           <br />
           Welcome to
           {' '}
-          <strong>Discussion&apos;s forum</strong>
+          <strong>Discussion&apos;s forum jonry</strong>
         </h2>
 
         <LoginInput login={onLogin} />
